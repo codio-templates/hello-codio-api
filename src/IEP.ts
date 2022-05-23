@@ -7,9 +7,9 @@ const clientId = process.env['CLIENT'] || 'clientId'
 const secret = process.env['SECRET'] || 'secret'
 
 // hardcoded values
-const courseId = process.env['COURSE_ID'] || 'courseId'
-const studentEmail = process.env['EMAIL'] || ''
-const multilier = _.toNumber(process.env['MULTIPLIER']) || 1.5
+const courseId = 'courseId'
+const studentEmail = 'student@email.com'
+const multiplier = 1.5
 
 async function main() {
   await api.auth(clientId, secret)
@@ -28,7 +28,7 @@ async function main() {
       if (!settings.examMode || !settings.examMode.timedExamMode.enabled) { // not an exam
           continue
       }
-      const timeLimit = settings.examMode.timedExamMode.duration * multilier
+      const timeLimit = settings.examMode.timedExamMode.duration * multiplier
       console.log(`Extend ${assignment.name} for Student ${student.name} timelimit to ${timeLimit} minutes`)
       await api.assignment.updateStudentTimeExtension(courseId, assignment.id, student.id, {
           extendedTimeLimit: timeLimit

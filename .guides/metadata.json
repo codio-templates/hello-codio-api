@@ -179,7 +179,18 @@
   {
    "id": "ae3d7021-2686-3c7a-5702-de45994aafb8",
    "title": "Student Accomodations",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "src/IEP.ts",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Student-Accomodations-ae3d.md",
