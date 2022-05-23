@@ -8,10 +8,10 @@ const clientId = process.env['CLIENT'] || 'clientId'
 const secret = process.env['SECRET'] || 'secret'
 
 // hardcoded values
-const courseId = process.env['COURSE_ID'] || 'courseId'
-const studentEmail = process.env['EMAIL'] || 'student@email.com'
-let moduleName = process.env['MODULE'] || 'module name'
-let assignmentNames = process.env['ASSIGNMENTS'] || 'assignment 1,assignment 2'
+const courseId = 'courseId'
+const studentEmail = 'student@email.com'
+let moduleName = 'module name'
+let assignmentNames = 'assignment 1,assignment 2'
 let shiftDays = 2
 let shiftHours = 12
 let shiftMinutes = 30

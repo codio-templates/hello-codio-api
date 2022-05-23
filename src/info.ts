@@ -7,7 +7,7 @@ const clientId = process.env['CLIENT'] || 'clientId'
 const secret = process.env['SECRET'] || 'secret'
 
 // hardcoded values
-const courseId = process.env['COURSE_ID'] || 'courseId'
+const courseId = 'courseId'
 
 async function main() {
   await api.auth(clientId, secret)

@@ -131,7 +131,18 @@
   {
    "id": "9205ab4a-fa1f-514d-ff6d-51124c17d27b",
    "title": "Extensions 2",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "src/extension-to-date.ts",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Extensions-2-9205.md",

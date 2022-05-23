@@ -1,8 +1,13 @@
 ##
 
-This Guide has a number of examples of how to use [Codio's API](https://github.com/codio/codio-api-js). Click on the example below to jump to the one closest to your usecase.
+This Guide has a number of examples of how to use [Codio's API](https://github.com/codio/codio-api-js). 
 
-For all of the examples below, you will need to set up API Integration in your Codio organization (i.e. create Client and Secret IDs). For instructions on how to do this, go to the next page.
+Before you run a script, you need to install dependencies by clicking the button below:
+{Install Dependencies | terminal}(yarn)
+
+For all of the examples below, you will need to **set up API Integration in your Codio organization** (i.e. create Client and Secret IDs). For instructions on how to do this, go to the next page.
+
+Click on the example below to jump to the one closest to your use case:
 
 ### 1. Configure Entire Course's Late Penalties
 Use one script to set all of your course assignments late penalties. With careful assignment naming, you can even apply different late policies to different assignments from a single script.

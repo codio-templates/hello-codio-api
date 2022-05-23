@@ -5,7 +5,7 @@ Print out the due dates for the course assignments for easy inclusion in a sylla
 ## Script overview
 You have everything setup in Codio -- hooray! The script on the left prints out a list of all the assignments in the course, similar to how they are presented in the course, with their corresponding due date.
 
-Since Codio does not have a due date field, the script checks if there are late penalties, and prints either the assignment end date if there are no late penalties, or the first late penalty (which is the latest a student can turn the assingment in without points off).
+Since Codio does not have a due date field, the script checks if there are late penalties, and prints either the assignment end date if there are no late penalties, or the first late penalty (which is the latest a student can turn the assignment in without points off).
 
 ## Using the script
 To use this script, you need to fill out the following hardcoded values. Click to highlight the variable in the code file:
@@ -31,7 +31,7 @@ Make any modifications as you see fit so that this script matches your use case.
     const secret = process.env['SECRET'] || 'secret'
 
     // hardcoded values
-    const courseId = process.env['COURSE_ID'] || 'courseId'
+    const courseId = 'courseId'
 
     async function main() {
       await api.auth(clientId, secret)

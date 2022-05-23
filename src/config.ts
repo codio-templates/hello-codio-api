@@ -8,7 +8,7 @@ const clientId = process.env['CLIENT'] || 'clientId'
 const secret = process.env['SECRET'] || 'secret'
 
 // hardcoded values
-const courseId = process.env['COURSE_ID'] || 'courseId'
+const courseId = 'courseId'
 
 function setDate(date: Date, shiftDays = 0, shiftHours = 0, shiftMinutes = 0): Date {
   const res = new Date(date);
