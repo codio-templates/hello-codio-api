@@ -7,7 +7,7 @@ A student let's you know they are sick and needs all the assignment due dates in
 
 The script:
 * [finds the student using their email](open_file src/sliding-extension.ts panel=0 ref="students" count=6)
-* [finds all the assignments in the sepcified listed modules](open_file src/sliding-extension.ts panel=0 ref="course.modules" count=5)
+* [finds all the assignments in the specified listed modules](open_file src/sliding-extension.ts panel=0 ref="course.modules" count=5)
 * [finds the specified assignments](open_file src/sliding-extension.ts panel=0 ref="const assignment " count=5)
 * [adjusts the deadlines](open_file src/sliding-extension.ts panel=0 ref="const extend" count=8)
   
@@ -50,24 +50,9 @@ Make any modifications as you see fit so that this script matches your use case.
     let shiftHours = 12
     let shiftMinutes = 30
 
-    function applyEnv() {
-      const _shiftDays = _.toNumber(process.env['SHIFT_DAYS'])
-      const _shiftHours = _.toNumber(process.env['SHIFT_HOURS'])
-      const _shiftMinutes = _.toNumber(process.env['SHIFT_MINUTES'])
-      if (!_.isNaN(_shiftDays)) {
-        shiftDays = _shiftDays
-      }
-      if (!_.isNaN(_shiftHours)) {
-        shiftHours = _shiftHours
-      }
-      if (!_.isNaN(_shiftMinutes)) {
-        shiftMinutes = _shiftMinutes
-      }
-    }
-
     async function main() {
-      applyEnv()
       await api.auth(clientId, secret)
+      
       const assignments = _.compact(assignmentNames.split(','))
       const students = await api.course.getStudents(courseId)
 
@@ -103,6 +88,7 @@ Make any modifications as you see fit so that this script matches your use case.
       console.error(_);
       process.exit(1)
     })
+
 
 
 </details>

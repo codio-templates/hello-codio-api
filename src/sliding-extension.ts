@@ -16,24 +16,9 @@ let shiftDays = 2
 let shiftHours = 12
 let shiftMinutes = 30
 
-function applyEnv() {
-  const _shiftDays = _.toNumber(process.env['SHIFT_DAYS'])
-  const _shiftHours = _.toNumber(process.env['SHIFT_HOURS'])
-  const _shiftMinutes = _.toNumber(process.env['SHIFT_MINUTES'])
-  if (!_.isNaN(_shiftDays)) {
-    shiftDays = _shiftDays
-  }
-  if (!_.isNaN(_shiftHours)) {
-    shiftHours = _shiftHours
-  }
-  if (!_.isNaN(_shiftMinutes)) {
-    shiftMinutes = _shiftMinutes
-  }
-}
-
 async function main() {
-  applyEnv()
   await api.auth(clientId, secret)
+  
   const assignments = _.compact(assignmentNames.split(','))
   const students = await api.course.getStudents(courseId)
 

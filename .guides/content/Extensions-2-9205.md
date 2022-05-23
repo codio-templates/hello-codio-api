@@ -7,7 +7,7 @@ A student is out of state on a basketball tournament for a long weekend, so all 
 
 The script:
 * [finds the student using their email](open_file src/extension-to-date.ts panel=0 ref="students" count=6)
-* [gets all assingments in the course](open_file src/extension-to-date.ts panel=0 ref="const course " count=1)
+* [gets all assignments in the course](open_file src/extension-to-date.ts panel=0 ref="const course " count=1)
 * [identifies those due during the range of time the student is away](open_file src/extension-to-date.ts panel=0 ref="endOfRange &&" count=1)
 * [adjusts the deadlines](open_file src/extension-to-date.ts panel=0 ref="const extension" count=4)
 
