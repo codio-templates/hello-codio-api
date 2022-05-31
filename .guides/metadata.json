@@ -68,6 +68,11 @@
      "path": "src/config.ts",
      "panel": 0,
      "action": "open"
+    },
+    {
+     "path": "#terminal: clear",
+     "panel": 0,
+     "action": "open"
     }
    ],
    "layout": "2-panels",
@@ -92,9 +97,14 @@
      "path": "src/info.ts",
      "panel": 0,
      "action": "open"
+    },
+    {
+     "path": "#terminal: clear;",
+     "panel": 1,
+     "action": "open"
     }
    ],
-   "layout": "2-panels",
+   "layout": "3-cell",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Print-Due-Dates-100d.md",
@@ -114,6 +124,11 @@
     },
     {
      "path": "src/sliding-extension.ts",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#terminal: clear;",
      "panel": 0,
      "action": "open"
     }
@@ -140,6 +155,11 @@
      "path": "src/extension-to-date.ts",
      "panel": 0,
      "action": "open"
+    },
+    {
+     "path": "#terminal: clear;",
+     "panel": 0,
+     "action": "open"
     }
    ],
    "layout": "2-panels",
@@ -164,6 +184,11 @@
      "path": "src/snow-day.ts",
      "panel": 0,
      "action": "open"
+    },
+    {
+     "path": "#terminal: clear;",
+     "panel": 0,
+     "action": "open"
     }
    ],
    "layout": "2-panels",
@@ -186,6 +211,11 @@
     },
     {
      "path": "src/IEP.ts",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#terminal: clear;",
      "panel": 0,
      "action": "open"
     }

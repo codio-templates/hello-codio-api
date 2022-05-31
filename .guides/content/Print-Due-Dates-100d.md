@@ -16,6 +16,28 @@ To use this script, you need to fill out the following hardcoded values. Click t
 
 [Remove all highlighting](open_file src/info.ts panel=0)
 
+|||important
+### Codio uses UTC by default
+If you are running this in Codio, the due dates will print in UTC by default.
+
+In the terminal (bottom-left), print out the list of timezones to choose from:
+```
+timedatectl list-timezones
+```
+
+Some common ones are:
+ * America/New_York
+ * America/Chicago
+ * America/Denver
+ * America/Los_Angeles
+
+In the terminal (bottom-left), set your chosen timezone:
+```
+sudo timedatectl set-timezone America/New_York
+```
+
+|||
+
 Make any modifications as you see fit so that this script matches your use case. You can always refer to the original script here:
 <details>
   <summary>
