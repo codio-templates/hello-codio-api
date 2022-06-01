@@ -43,7 +43,7 @@ async function main() {
   const extend = shiftDays * 24 * 60 + shiftHours * 60 + shiftMinutes
 
   for(const assignment of toExtend) {
-    console.log(`Extend ${assignment.name} for Student ${student.name} deadline on ${extend} minutes`)
+    console.log(`Extending ${assignment.name} for ${student.name} by ${extend} minutes`)
     await api.assignment.updateStudentTimeExtension(courseId, assignment.id, student.id, {
         extendedDeadline: extend
     })

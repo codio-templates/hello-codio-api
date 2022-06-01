@@ -29,9 +29,10 @@ async function main() {
           continue
       }
       const timeLimit = settings.examMode.timedExamMode.duration * multiplier
-      console.log(`Extend ${assignment.name} for Student ${student.name} timelimit to ${timeLimit} minutes`)
+      console.log(`Extending ${assignment.name} from ${settings.examMode.timedExamMode.duration} minutes to ${timeLimit} minutes for student ${student.name}`)
+      const extension = timeLimit - settings.examMode.timedExamMode.duration
       await api.assignment.updateStudentTimeExtension(courseId, assignment.id, student.id, {
-          extendedTimeLimit: timeLimit
+          extendedTimeLimit: extension
       })
     }
   }
