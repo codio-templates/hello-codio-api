@@ -26,6 +26,12 @@ To use this script, you need to fill out the following hardcoded values. Click t
 
 [Remove all highlighting](open_file src/extension-to-date.ts panel=0)
 
+|||important
+### Codio ignores test students and teachers
+If you are testing this API script, you will need to create a "real" test student as Codio ignores both test students, and students who are also course instructors -- meaning you will get a `student not found` error!
+
+|||
+
 Make any modifications as you see fit so that this script matches your use case. You can always refer to the original script here:
 <details>
   <summary>
