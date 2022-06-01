@@ -29,7 +29,7 @@ async function main() {
       continue
     }
     if (settings.endTime < endOfRange && settings.endTime > startOfRange) {
-      const extension = (newDeadLine.getTime() - settings.endTime.getTime()) / (1000 * 60)
+      const extension = Math.round((newDeadLine.getTime() - settings.endTime.getTime()) / (1000 * 60))
       console.log(`Adjusting ${assignment.name} adding ${extension} minutes`)
       await api.assignment.updateStudentTimeExtension(courseId, assignment.id, student.id, {
         extendedDeadline: extension
