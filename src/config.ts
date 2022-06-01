@@ -24,7 +24,7 @@ async function main() {
   const course = await api.course.info(courseId)
   for (const assignment of course.assignments) {
     const settings = await api.assignment.getSettings(courseId, assignment.id)
-    console.log(`Updateing ${assignment.name}`)
+    console.log(`Updating ${assignment.name}`)
     if (!settings.endTime) {
       continue
     }
