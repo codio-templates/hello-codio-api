@@ -146,10 +146,10 @@ chownr@^2.0.0:
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-2.0.0.tgz#15bfbe53d2eab4cf70f18a8cd68ebe5b3cb1dece"
   integrity sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==
 
-codio-api-js@^0.8:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/codio-api-js/-/codio-api-js-0.8.0.tgz#df644084320c3a9837a6301c0f80361ef937b950"
-  integrity sha512-074/6omhXa2EbJAVomoMYsuqwDhrGKqogpSPcQh1blJ0IK6BN2yc18Qvf/hlyvk773HDgiYp7TacOhlV/qIfKA==
+codio-api-js@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/codio-api-js/-/codio-api-js-0.8.1.tgz#92f554a7868e7fe4e8d35543f9594f9cf27ab4ca"
+  integrity sha512-t2IVxcnOBeNEm1HSfjB7RnO7p0hLcfEfN68S5RNSQIZbvA5q6qASU8vqRMs+ljto0MC5MB/rTbmiWbjA5ruQBw==
   dependencies:
     bent "^7.3.12"
     form-data "^4.0.0"
