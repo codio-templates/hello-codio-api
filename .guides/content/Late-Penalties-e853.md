@@ -22,6 +22,14 @@ To use this script, you need to fill out the following hardcoded values. Click t
 * [courseId](open_file src/config.ts panel=0 ref="courseId" count=1)
     * Navigate to the course you want to use in a different tab and copy the course ID from the URL bar: `https://codio.com/home/teacher/course_id_string_here/overview`
 
+Modify the late policies to match your course. Try starting with the one that is closest and then modify:
+1. Up to 3 days late with a 10% penalty and up to 7 days late with a 30% penalty
+    - [Highlight this section of code](open_file src/config.ts panel=0 ref="Homework:" count=17)
+2. Up to 3 days late with a 5% penalty for every 12 hours the submission is late
+    - [Highlight this section of code](open_file src/config.ts panel=0 ref="Labs:" count=16)
+3. Up to 1 day late with a 1% penalty for every hour the submission is late
+    - [Highlight this section of code](open_file src/config.ts panel=0 ref="Project:" count=16)
+
 [Remove all highlighting](open_file src/config.ts panel=0)
 
 Make any modifications as you see fit so that this script matches your use case. You can always refer to the original script here:

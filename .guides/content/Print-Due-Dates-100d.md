@@ -14,6 +14,11 @@ To use this script, you need to fill out the following hardcoded values. Click t
 * [courseId](open_file src/info.ts panel=0 ref="courseId" count=1)
     * Navigate to the course you want to use in a different tab and copy the course ID from the URL bar: `https://codio.com/home/teacher/course_id_string_here/overview`
 
+* If the script is printing in a different format then you were expecting, you can hardcode [the time and date format](open_file src/info.ts panel=0 ref="datetime.toLocaleString" count=1)
+    * UK: `toLocaleString('en-GB')` - day-month-year order and 24-hour time without AM/PM
+    * US: `toLocaleString('en-US')` - month-day-year order and 12-hour time with AM/PM
+    * Or [configure how date and time are printed](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString#using_options)
+
 [Remove all highlighting](open_file src/info.ts panel=0)
 
 |||important
