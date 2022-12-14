@@ -1,0 +1,29 @@
+{
+	"chapter": false,
+	"closeTerminalSession": true,
+	"contentType": "markdown",
+	"files": [
+		{
+			"action": "close",
+			"path": "#tabs"
+		},
+		{
+			"action": "open",
+			"panel": 0,
+			"path": "src/info.ts"
+		},
+		{
+			"action": "open",
+			"panel": 1,
+			"path": "#terminal: clear;"
+		}
+	],
+	"id": "6feb6b67-b3fc-cd31-c5a3-b9c8c87e9693",
+	"layout": "3-cell",
+	"learningObjectives": "",
+	"path": [],
+	"reset": [],
+	"teacherOnly": false,
+	"title": "Print Due Dates",
+	"type": "page"
+}

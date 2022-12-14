@@ -1,0 +1,29 @@
+{
+	"chapter": false,
+	"closeTerminalSession": true,
+	"contentType": "markdown",
+	"files": [
+		{
+			"action": "close",
+			"path": "#tabs"
+		},
+		{
+			"action": "open",
+			"panel": 0,
+			"path": "src/config.ts"
+		},
+		{
+			"action": "open",
+			"panel": 0,
+			"path": "#terminal: clear"
+		}
+	],
+	"id": "e853d7c4-386e-f239-ff18-96e0497d6856",
+	"layout": "2-panels",
+	"learningObjectives": "",
+	"path": [],
+	"reset": [],
+	"teacherOnly": false,
+	"title": "Late Penalties",
+	"type": "page"
+}

@@ -1,0 +1,26 @@
+{
+	"allowGuideClose": false,
+	"collapsedOnStart": false,
+	"hideBackToDashboard": false,
+	"hideMenu": false,
+	"hideSectionsToggle": false,
+	"lexikonTopic": "",
+	"order": [
+		"List-of-Examples-0682",
+		"Creating-Codio-API-Integration-credentials-b337",
+		"Saving-API-credentials-as-Environment-Variables-c520",
+		"Late-Penalties-e853",
+		"Print-Due-Dates-6feb",
+		"Extensions-1-7d6f",
+		"Extensions-2-d4a5",
+		"Shift-Due-Dates-8b34",
+		"Student-Accommodations-3b6a"
+	],
+	"protectLayout": false,
+	"scripts": [],
+	"suppressPageNumbering": true,
+	"theme": "light",
+	"title": "Codio API Starter Pack",
+	"useMarkAsComplete": true,
+	"useSubmitButtons": true
+}

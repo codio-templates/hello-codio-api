@@ -1,0 +1,29 @@
+{
+	"chapter": false,
+	"closeTerminalSession": true,
+	"contentType": "markdown",
+	"files": [
+		{
+			"action": "close",
+			"path": "#tabs"
+		},
+		{
+			"action": "open",
+			"panel": 0,
+			"path": "src/extension-to-date.ts"
+		},
+		{
+			"action": "open",
+			"panel": 0,
+			"path": "#terminal: clear;"
+		}
+	],
+	"id": "d4a595dc-d7c0-6178-4f1a-ae7a7b53ba7e",
+	"layout": "2-panels",
+	"learningObjectives": "",
+	"path": [],
+	"reset": [],
+	"teacherOnly": false,
+	"title": "Extensions 2",
+	"type": "page"
+}
