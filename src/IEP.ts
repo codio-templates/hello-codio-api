@@ -24,16 +24,19 @@ async function main() {
   for (const module of course.modules) {
     console.log(`${module.name} :`)
     for (const assignment of module.assignments) {
-      const settings = await api.assignment.getSettings(courseId, assignment.id)
-      if (!settings.examMode || !settings.examMode.timedExamMode.enabled) { // not an exam
-          continue
+      if (assignment.name.includes('Quiz') || assignment.name.includes('Exam')) {
+        console.log(`${assignment.name} :`)
+        const settings = await api.assignment.getSettings(courseId, assignment.id)
+        console.log(`${settings.examMode?.timedExamMode?.enabled} :`)
+        if (settings.examMode?.timedExamMode?.enabled){
+          const timeLimit = settings.examMode.timedExamMode.duration * multiplier
+          console.log(`Extending ${assignment.name} from ${settings.examMode.timedExamMode.duration} minutes to ${timeLimit} minutes for student ${student.name}`)
+          const extension = timeLimit - settings.examMode.timedExamMode.duration
+          await api.assignment.updateStudentTimeExtension(courseId, assignment.id, student.id, {
+              extendedTimeLimit: extension
+          })
+        }
       }
-      const timeLimit = settings.examMode.timedExamMode.duration * multiplier
-      console.log(`Extending ${assignment.name} from ${settings.examMode.timedExamMode.duration} minutes to ${timeLimit} minutes for student ${student.name}`)
-      const extension = timeLimit - settings.examMode.timedExamMode.duration
-      await api.assignment.updateStudentTimeExtension(courseId, assignment.id, student.id, {
-          extendedTimeLimit: extension
-      })
     }
   }
 }
