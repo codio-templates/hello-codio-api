@@ -38,6 +38,7 @@ Make any modifications as you see fit so that this script matches your use case.
      <b>Copy of original script</b>
   </summary>
 
+```javascript
     require('dotenv').config()
     import codio from 'codio-api-js'
     import _ from 'lodash'
@@ -130,6 +131,7 @@ Make any modifications as you see fit so that this script matches your use case.
       console.error(_);
       process.exit(1)
     })
+```
 
 </details>
 
